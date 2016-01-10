@@ -1,0 +1,6 @@
+{% for k,v in wszyscy_uczniowie.items %}
+	{{ k }}:<br/>
+	    {% for ocena in v %}
+		<p>{{ ocena }}</p><br/>
+	    {% endfor %}
+{% endfor %}
