@@ -1,0 +1,11 @@
+<center><h1>Wszystkie Wpisy</h1></center>
+{% for wpis in wpisy %}
+<hr>
+    <b>Tytul:</b>
+    {{ wpis.tytul }} <br/><br/>
+    <p>{{ wpis.wpis }}</p> <br/>
+    <b>Autor:</b>
+    {{ wpis.autor }} <br/>
+    <b>Data dodania:</b>
+    {{ wpis.data_wpisu }}<br/></<br>
+{% endfor %}

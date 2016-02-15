@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Osoba, Oceny
+from .models import Osoba, Oceny, Wpisy
 
 # Register your models here.
 
@@ -11,3 +11,4 @@ class OsobaAdmin(admin.ModelAdmin):
     
 
 admin.site.register(Osoba, OsobaAdmin)
+admin.site.register(Wpisy)
