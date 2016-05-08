@@ -7,5 +7,6 @@ urlpatterns = [
 	url(r'^pawel/', views.IndexView.as_view(), name='index'),
 	url(r'^wpisy/', views.PokazWpisy.as_view(), name='wpisy'),
 	url(r'^forma/', views.forma, name='forma'),
+	url(r'^$', views.PokazWpisy.as_view(), name='wpisy'),
     url(r'^test/', views.test, name='test'),
 ]
